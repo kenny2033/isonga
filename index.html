@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript & DOM Crash Course</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div>
+          <h1>JavaScript DOM Crash Course</h1>
+          <p class="subtitle">Explore More!</p>
+        </div>
+        <button class="dark-mode-toggle" id="darkModeToggle">
+          <span>🌙</span> Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- JS Fundamentals Section -->
+      <section class="section">
+        <div class="section-header">User Form</div>
+        <div class="section-content">
+          <div class="box">
+            <h2>Add User</h2>
+            <form class="user-form" id="userForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Enter name" required />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="box">
+            <h2>Mouse Position Tracker</h2>
+            <p>Move your mouse around this section:</p>
+            <div class="mouse-tracker" id="mouseTracker">
+              Mouse position: X: <span id="mouseX">0</span>, Y:
+              <span id="mouseY">0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Item Lister Section -->
+      <section class="section">
+        <div class="section-header">Item Lister</div>
+        <div class="section-content">
+          <div class="box">
+            <h2>Add Items</h2>
+            <form class="item-form" id="itemForm">
+              <input
+                type="text"
+                id="itemInput"
+                placeholder="Add item..."
+                required
+              />
+              <button type="submit">Add Item</button>
+            </form>
+          </div>
+
+          <div class="box">
+            <h2>Items</h2>
+            <ul class="item-list" id="itemList">
+              <li>Item 1 <button class="delete-btn">Delete</button></li>
+              <li>Item 2 <button class="delete-btn">Delete</button></li>
+              <li>Item 3 <button class="delete-btn">Delete</button></li>
+              <li>Item 4 <button class="delete-btn">Delete</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        My interactive JavaScript and DOM @ kalia ndoli kenny &copy; 2023 | All
+        concepts covered in this interactive demo
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
